@@ -22,7 +22,7 @@ class _TodoScreenpageState extends State<TodoScreenpage> {
     return Scaffold(
       backgroundColor: Colors.yellow[100],
       appBar: AppBar(
-        elevation: 0,
+        elevation: 0.5,
         title: const Text('TO DO',
             style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold)),
         centerTitle: true,
@@ -41,7 +41,7 @@ class _TodoScreenpageState extends State<TodoScreenpage> {
                         )
                       : value.todoList.isEmpty
                           ? Center(
-                              child: Image.asset('assets/search_image.png',
+                              child: Image.asset('assets/add-photo-icon-29.jpg',
                                   width:
                                       MediaQuery.of(context).size.width * 0.8,
                                   height:

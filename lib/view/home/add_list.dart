@@ -29,7 +29,7 @@ class AddTodoPage extends StatelessWidget {
             minLines: 5,
             maxLines: 15,
           ),
-          const SizedBox(height: 20),
+          const SizedBox(height: 19),
           ElevatedButton(
               style: const ButtonStyle(
                   backgroundColor: WidgetStatePropertyAll(Colors.yellow)),
@@ -38,7 +38,10 @@ class AddTodoPage extends StatelessWidget {
 
                 Navigator.pop(context);
               },
-              child: const Text('SUBMIT'))
+              child: const Text(
+                'SUBMIT',
+                style: TextStyle(color: Colors.black),
+              ))
         ],
       ),
     );

@@ -1,11 +1,12 @@
-
 class TodoModel {
   String? id;
   String? title;
   String? description;
 
   TodoModel({
-    this.id,required this.title,required this.description,
+    this.id,
+    required this.title,
+    required this.description,
   });
   factory TodoModel.fromJson(Map<String, dynamic> json) {
     return TodoModel(
@@ -18,5 +19,4 @@ class TodoModel {
     data['id'] = id;
     return data;
   }
-  
 }
