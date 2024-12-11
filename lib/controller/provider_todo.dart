@@ -16,7 +16,6 @@ class Todooprovider extends ChangeNotifier {
     notifyListeners();
     try {
       todoList = await todoservice.fetchTodo();
-      notifyListeners();
     } catch (error) {
       log('Error on fetching Todo : $error');
       rethrow;

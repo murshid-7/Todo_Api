@@ -3,19 +3,24 @@ import 'package:provider/provider.dart';
 import 'package:todo_app_api/controller/provider_todo.dart';
 import 'package:todo_app_api/view/home/home_todo_list.dart';
 
-void main(){
+void main() {
   runApp(const MyApp());
-  
 }
+
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return ChangeNotifierProvider(create: (context) => Todooprovider(),
+    return MultiProvider(
+      providers: [
+        ChangeNotifierProvider(
+          create: (context) => Todooprovider(),
+        )
+      ],
       child: const MaterialApp(
         debugShowCheckedModeBanner: false,
-        home:TodoScreenpage() ,
+        home: TodoScreenpage(),
       ),
     );
   }

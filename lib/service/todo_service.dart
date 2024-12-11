@@ -3,7 +3,7 @@ import 'package:todo_app_api/model/todo_model.dart';
 
 class TodoService {
   final Dio _dio = Dio();
-  final String _url = 'https://65decaf1ff5e305f32a076a3.mockapi.io/todo';
+  final String _url = 'z';
 
   /*
   
@@ -23,6 +23,8 @@ class TodoService {
       throw Exception('Failed to load  : $error');
     }
   }
+
+  
 
   Future<void> addTodo(TodoModel value) async {
     try {
